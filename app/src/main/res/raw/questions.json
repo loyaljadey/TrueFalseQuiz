@@ -1,0 +1,22 @@
+[
+    {
+      "question": "Spacewar, an early video game, was developed to test the military strategies of the Pentagon.",
+      "answer": "FALSE. Spacewar, an early video game, was developed in 1962 by a group of MIT students to test the limits of the first minicomputer by Digital Equipment Corporation (DEC)."
+    },
+    {
+      "question": "Steve Jobs unveiled the Macintosh during a commercial that aired during the final of the World Series of baseball.",
+      "answer": "FALSE. Steve Jobs launched the Macintosh in an ad broadcast during the Super Bowl (final match of the National Football League season) in 1984. The ad is still considered by many experts as the best of all time."
+    },
+    {
+      "question": "ENIAC was down half the time.",
+      "answer": "TRUE. ENIAC was a huge and very fragile machine. It contained 17,468 vacuum tubes. If one of these tubes burned out, the computer crashed."
+    },
+    {
+      "question": "The IBM PC, the first IBM personal computer, offered 16 KB of RAM.",
+      "answer": "TRUE. In 1981, IBM launched the IBM PC, their first personal computer. The device came with 16 KB of RAM with the possibility of increasing it up to 256 KB."
+    },
+    {
+      "question": "The first truly successful video game was called “Bong”.",
+      "answer": "FALSE. The first truly successful video game was called “Pong”. Launched on the market at the end of 1972 as an arcade video machine, Pong was made available on a home console in 1975."
+    }
+]
