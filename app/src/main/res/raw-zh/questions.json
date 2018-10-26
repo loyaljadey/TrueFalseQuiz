@@ -1,0 +1,22 @@
+[
+    {
+      "question": "Spacewar 是一种早期的视频游戏，用于测试五角大楼的军事战略。",
+      "answer": false
+    },
+    {
+      "question": "史蒂夫乔布斯在世界职业棒球大赛决赛期间播出的商业广告中推出了Macintosh。",
+      "answer": false
+    },
+    {
+      "question": "ENIAC 减少了一半的时间。",
+      "answer": true
+    },
+    {
+      "question": "IBM PC 是第一台IBM个人计算机，提供 16 KB 的 RAM。",
+      "answer": true
+    },
+    {
+      "question": "第一个真正成功的视频游戏叫做 \"Bong\"。",
+      "answer": false
+    }
+]

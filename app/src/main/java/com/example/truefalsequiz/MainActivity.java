@@ -3,8 +3,10 @@ package com.example.truefalsequiz;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.gson.Gson;
 
@@ -22,6 +24,8 @@ public class MainActivity extends AppCompatActivity {
     private TextView Question;
     private Button TRUE;
     private Button FALSE;
+
+    private Quiz quiz;
 
 
     @Override
@@ -42,7 +46,59 @@ public class MainActivity extends AppCompatActivity {
         List<Question> questionList = Arrays.asList(questions);
         // verify that it read everything properly
         Log.d(TAG, "onCreate: " + questionList.toString());
+
+
+        quiz = new Quiz(questionList);
+        runQuiz();
     }
+
+    public void runQuiz() {
+        /*setListeners();
+        Question.setText(quiz.nextQuestion().getQuestion());
+        QuestionNumber.setText(String.valueOf(quiz.getCurrentQuestionNum()));*/
+        Question.setText(quiz.nextQuestion().getQuestion());
+        QuestionNumber.setText(String.valueOf(quiz.getCurrentQuestionNum()));
+
+        View.OnClickListener listener = new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                switch (v.getId()) {
+                    case R.id.button_mainActivity_true:
+                        quiz.checkAnswer(true);
+                        break;
+                    case R.id.button_mainActivity_false:
+                        quiz.checkAnswer(false);
+                        break;
+                }
+                Toast.makeText(MainActivity.this, "Score = " + quiz.getScore(), Toast.LENGTH_LONG).show();
+                com.example.truefalsequiz.Question nextQuestion = quiz.nextQuestion();
+                if(nextQuestion != null) {
+                    Question.setText(nextQuestion.getQuestion());
+                    QuestionNumber.setText(String.valueOf(quiz.getCurrentQuestionNum()));
+                }
+            }
+        };
+        TRUE.setOnClickListener(listener);
+        FALSE.setOnClickListener(listener);
+    }
+
+    /*public void setListeners(){
+        TRUE.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                quiz.checkAnswer(true);
+                Toast.makeText(MainActivity.this, "Score = " + quiz.getScore(), Toast.LENGTH_LONG).show();
+                Question quiz.nextQuestion();
+            }
+        });
+        FALSE.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                quiz.checkAnswer(false);
+                Toast.makeText(MainActivity.this, "Score = " + quiz.getScore(), Toast.LENGTH_LONG).show();
+            }
+        });
+    }*/
 
     private void wireWidgets() {
         Question = findViewById(R.id.textView_mainActivity_question);

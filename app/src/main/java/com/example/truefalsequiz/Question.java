@@ -4,16 +4,9 @@ public class Question {
     String question;
     boolean answer;
 
-    public boolean checkAnswer(boolean userAnswer)
-    {
-        if(answer = userAnswer)
-        {
-            return true;
-        }
-        else
-        {
-            return false;
-        }
+    public Question(String question, boolean answer) {
+        this.question = question;
+        this.answer = answer;
     }
 
     public String getQuestion() {

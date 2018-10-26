@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="quiz_true">kweli</string>
+    <string name="app_name">Quiz ya uongo kweli</string>
+    <string name="quiz_false">uongo</string>
+</resources>

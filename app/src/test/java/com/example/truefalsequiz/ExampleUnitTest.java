@@ -14,4 +14,13 @@ public class ExampleUnitTest {
     public void addition_isCorrect() {
         assertEquals(4, 2 + 2);
     }
+
+    @Test
+    public void nextQuestionIsCorrect() {
+        Question q1 = new Question("q1", true);
+        Question q2 = new Question("q2", false);
+        Question q3 = new Question("q3", true);
+
+
+    }
 }

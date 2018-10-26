@@ -1,0 +1,22 @@
+[
+    {
+      "question": "Spacewar, mchezo wa video ya mapema, ilianzishwa kupima mikakati ya kijeshi ya Pentagon.",
+      "answer": false
+    },
+    {
+      "question": "Steve Jobs alifunua Macintosh wakati wa biashara ambayo ilitolewa wakati wa mwisho wa World Series ya baseball.",
+      "answer": false
+    },
+    {
+      "question": "ENIAC ilikuwa chini ya nusu wakati.",
+      "answer": true
+    },
+    {
+      "question": "PC IBM, kompyuta ya kwanza ya IBM binafsi, ilitoa 16 KB ya RAM.",
+      "answer": true
+    },
+    {
+      "question": "Mchezo wa kwanza wa mafanikio ya video uliitwa \"Bong\". ",
+      "answer": false
+    }
+]

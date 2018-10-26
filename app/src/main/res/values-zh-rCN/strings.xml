@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="quiz_false">假</string>
+    <string name="quiz_true">真正</string>
+    <string name="app_name">真假测验</string>
+</resources>
